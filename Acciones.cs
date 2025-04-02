@@ -8,6 +8,7 @@ namespace grigview
 {
     internal class Acciones
     {
+        private const bool V = true;
         List<Padres> ListaFamilia = new List<Padres>
         {
             new Padres("Gary",48,"Universitario","Rubio","Azul"),
@@ -20,6 +21,24 @@ namespace grigview
         public List<Padres> MostrarFamilia()
         { 
             return ListaFamilia; 
+        }
+
+        public bool EliminarFamilia(string nombre)
+        {
+            try
+            {
+                var objecteliminar = ListaFamilia.Find(x =>x.Nombre == nombre);
+                if (objecteliminar != null)
+                {
+                    ListaFamilia.Remove(objecteliminar);
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }
