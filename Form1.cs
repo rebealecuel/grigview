@@ -45,5 +45,13 @@ namespace grigview
             else
                 MessageBox.Show("Fallo al agregar");
         }
+
+        private void btnActua_Click(object sender, EventArgs e)
+        {
+            if (acc.ActualizarFamilia(txbName.Text, Convert.ToInt32(txbEdad.Text), txbGrado.Text, txbCabello.Text, txbOjos.Text))
+                MessageBox.Show("Actualizado con exito");
+            else
+                MessageBox.Show("Fallo al actualizar");
+        }
     }
 }

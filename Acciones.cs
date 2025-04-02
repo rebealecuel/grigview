@@ -54,5 +54,18 @@ namespace grigview
                 return false;
             }
         }
+        public bool ActualizarFamilia(string nombre, int edad, string gradoEstudio, string cabello, string ojos)
+        {
+            try
+            {
+                var objectactua = ListaFamilia.Find(x => x.Nombre == nombre);
+                objectactua.Nombre = nombre;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

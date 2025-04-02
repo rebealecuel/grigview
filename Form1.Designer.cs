@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txbOjos = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnActua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ListaFamilia)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,19 +175,30 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(453, 417);
+            this.btnAgregar.Location = new System.Drawing.Point(510, 417);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(97, 44);
+            this.btnAgregar.Size = new System.Drawing.Size(64, 44);
             this.btnAgregar.TabIndex = 15;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnActua
+            // 
+            this.btnActua.Location = new System.Drawing.Point(435, 417);
+            this.btnActua.Name = "btnActua";
+            this.btnActua.Size = new System.Drawing.Size(64, 44);
+            this.btnActua.TabIndex = 16;
+            this.btnActua.Text = "Actualizar";
+            this.btnActua.UseVisualStyleBackColor = true;
+            this.btnActua.Click += new System.EventHandler(this.btnActua_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 489);
+            this.Controls.Add(this.btnActua);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txbOjos);
@@ -229,6 +241,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbOjos;
         private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnActua;
     }
 }
 
