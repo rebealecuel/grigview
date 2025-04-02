@@ -18,6 +18,7 @@ namespace grigview
             new Padres("Miles",18,"Universitario","Cafe","Azul")
         };
 
+        Padres a = new Padres();
         public List<Padres> MostrarFamilia()
         { 
             return ListaFamilia; 
@@ -34,6 +35,19 @@ namespace grigview
                     return true;
                 }
                 return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool InsertarFamilia(string nombre, int edad, string gradoEstudio, string cabello, string ojos)
+        {
+            try
+            {
+                ListaFamilia.Add(new Padres(a.Nombre = nombre, a.Edad = edad, a.GradoEstudio = gradoEstudio, a.Cabello = cabello, a.Ojos = ojos));
+                return true;
             }
             catch (Exception)
             {

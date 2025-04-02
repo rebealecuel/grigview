@@ -32,10 +32,18 @@ namespace grigview
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            if (acc.EliminarFamilia(txbNombre.Text))
+            if (acc.EliminarFamilia(txbBorrar.Text))
                 MessageBox.Show("Eliminado con exito");
             else
                 MessageBox.Show("Fallo al eliminar");
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (acc.InsertarFamilia(txbName.Text, Convert.ToInt32(txbEdad.Text), txbGrado.Text, txbCabello.Text, txbOjos.Text))
+                MessageBox.Show("Agregado con exito");
+            else
+                MessageBox.Show("Fallo al agregar");
         }
     }
 }
